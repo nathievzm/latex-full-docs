@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[
+    paperheight=6in,
+    paperwidth=5in,
+    top=10mm,
+    bottom=20mm,
+    left=10mm,
+    right=10mm]{geometry}
+
+\begin{document}
+\setlength{\parindent}{20pt}
+
+\section*{This is a section}
+% not indented because it is the first paragraph after a section heading
+\textbf{First paragraph} of a section which, as you can see, is not indented. This is more text in the paragraph. This is more text in the paragraph.
+
+\textbf{Second paragraph}. As you can see it is indented. This is more text in the paragraph. This is more text in the paragraph. 
+
+\noindent\textbf{Third paragraph}. This too is not indented due to use of \texttt{\string\noindent}.
+This is more text in the paragraph. This is more text in the paragraph.
+The current value of \verb|\parindent| is \the\parindent. This is more text in the paragraph.
+
+\noindent A new paragraph with some text, then an \verb|\indent|\indent command.
+Next, some inline math which also has an indent $y\indent x$. \verb|\indent| also works when used in an \verb|\hbox| such 
+as \verb|\hbox{A\indent B}| which produces \hbox{A\indent B}.
+
+\end{document}

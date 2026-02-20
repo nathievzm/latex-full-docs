@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{enumitem}
+
+\newcommand{\randomtext}{Hello, here is some text without a meaning. Hello, here is some text without a meaning.}
+\newcommand{\shortrandomtext}{Hello, here is some text.}
+
+\begin{document}
+
+% Create a custom list based on enumerate
+% It is called "myitems"
+% We'll create a list that is 3 levels deep
+\newlist{myitems}{enumerate}{3}
+
+% Configure the behaviour of level 1 entries
+% NOTE: we use the list counter "myitemsi"
+\setlist[myitems, 1]
+{label=\arabic{myitemsi}., %1., 2., 3., ...
+    leftmargin=\parindent,
+    rightmargin=10pt
+}
+
+% Configure the behaviour of level 2 entries
+% NOTE: we use the list counter "myitemsii"
+\setlist[myitems, 2]
+{label=\arabic{myitemsi}.\arabic{myitemsii}, %1.1, 1.2, 1.3...
+    leftmargin=15pt,
+    rightmargin=15pt}
+
+% Configure the behaviour of level 3 entries
+% NOTE: we use the list counter "myitemsiii"
+\setlist[myitems, 3]
+% Use a label of 1.1:<kern>(a), 1.1:<kern>(b) etc  
+{label=\arabic{myitemsi}.\arabic{myitemsii}:\kern1.5pt(\alph{myitemsiii}),
+    leftmargin=30pt,
+    rightmargin=30pt}
+
+\randomtext
+\begin{myitems}
+    \item \randomtext
+    \begin{myitems}
+        \item \randomtext
+        \begin{myitems}
+            \item \randomtext
+            \item \randomtext
+        \end{myitems}
+        \item \shortrandomtext
+        \item \shortrandomtext
+    \end{myitems}
+    \item \randomtext
+\end{myitems}
+
+\end{document}

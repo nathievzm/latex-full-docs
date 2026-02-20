@@ -1,0 +1,42 @@
+\documentclass{article}
+
+\usepackage{enumitem}
+\newcommand{\randomtext}{Hello, here is some text without a meaning. Hello, here is some text without a meaning.}
+
+\begin{document}
+
+\section*{Using LaTeX's default settings for \texttt{itemize}}
+
+\randomtext
+
+\begin{itemize}
+    \item \randomtext
+          \begin{itemize}
+              \item \randomtext
+                    \begin{itemize}
+                        \item \randomtext
+                    \end{itemize}
+              \item \randomtext
+          \end{itemize}
+    \item \randomtext
+\end{itemize}
+
+\section*{Using a custom \texttt{itemize} via \texttt{enumitem}}
+
+\subsection*{Note the effect of left and right margin settings}
+
+\randomtext
+
+\begin{itemize}[leftmargin=30pt, rightmargin=2cm]
+    \item \randomtext
+          \begin{itemize}
+              \item \randomtext
+                    \begin{itemize}
+                        \item \randomtext
+                    \end{itemize}
+              \item \randomtext
+          \end{itemize}
+    \item \randomtext
+\end{itemize}
+
+\end{document}

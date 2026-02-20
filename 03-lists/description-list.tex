@@ -1,0 +1,16 @@
+\documentclass{article}
+
+\usepackage[english]{babel} % To obtain English text with the blindtext package
+\usepackage{blindtext} % To generate dummy text
+\usepackage{lipsum} % To generate dummy text
+
+\begin{document}
+
+\begin{description}
+    \item This is an entry \textit{without} a label.
+    \item [Something short]  A short one-line description.
+    \item [Something long] A much longer description. \blindtext[1]
+    \item [Something very long] A very long description. \lipsum[1-2]
+\end{description}
+
+\end{document}

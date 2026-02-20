@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{enumitem}
+
+\begin{document}
+
+\newlist{contract}{enumerate}{10}
+\setlist[contract]{label*=\arabic*.}
+\setlistdepth{10}
+
+\section*{Custom list nested to 10 levels deep!}
+
+\begin{contract}
+    \item Level 1
+    \begin{contract}
+        \item Level 2
+        \begin{contract}
+            \item Level 3
+            \begin{contract}
+                \item Level 4
+                \begin{contract}
+                    \item Level 5
+                    \begin{contract}
+                        \item Level 6
+                        \begin{contract}
+                            \item Level 7
+                            \begin{contract}
+                                \item Level 8
+                                \begin{contract}
+                                    \item Level 9
+                                    \begin{contract}
+                                        \item Level 10
+                                    \end{contract}
+                                \end{contract}
+                            \end{contract}
+                        \end{contract}
+                    \end{contract}
+                \end{contract}
+            \end{contract}
+        \end{contract}
+    \end{contract}
+\end{contract}
+
+\end{document}

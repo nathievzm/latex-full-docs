@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+\renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
+\begin{document}
+
+\section*{Customizing numbered lists}
+
+\begin{enumerate}
+    \item One
+    \item Two
+    \item Three
+          \begin{enumerate}
+              \item Three point one
+                    \begin{enumerate}
+                        \item Three point one, point one
+                              \begin{enumerate}
+                                  \item Three point one, point one, point one
+                                  \item Three point one, point one, point two
+                              \end{enumerate}
+                    \end{enumerate}
+          \end{enumerate}
+    \item Four
+    \item Five
+\end{enumerate}
+
+\section*{Customizing bulleted lists}
+
+\begin{verbatim}
+    \newcounter{foo}
+    \setcounter{foo}{5}    
+\end{verbatim}
+
+\newcounter{foo}
+\setcounter{foo}{5}
+
+\begin{itemize}
+    \item \verb|\arabic{foo}| produces \arabic{foo}
+    \item \verb|\roman{foo}| produces \roman{foo}
+    \item \verb|\Roman{foo}| produces \Roman{foo}
+    \item \verb|\Alph{foo}| produces \Alph{foo}
+    \item \verb|\alph{foo}| produces \alph{foo}
+\end{itemize}
+
+\end{document}
