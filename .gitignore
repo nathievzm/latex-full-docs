@@ -31,6 +31,7 @@
 *.notes
 # tikz
 *.pgf
+*.pdf
 *.pdf_tex
 # xcolor
 *.xcp
