@@ -1,0 +1,50 @@
+## Core LaTeX intermediate files
+*.aux
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Bibliography files
+*.bbl
+*.blg
+*.bib.bak
+*.bib~
+
+## Package-specific files
+# hyperref
+*.brf
+# listings
+*.lol
+# natbib
+*.notes
+# tikz
+*.pgf
+*.pdf_tex
+# xcolor
+*.xcp
+# minted
+_minted-*
+*.pyg
+
+## Build directories
+build/
+out/
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## Final PDF (Optional: uncomment if you only want to track source code)
+# *.pdf
