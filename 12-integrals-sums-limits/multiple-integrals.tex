@@ -1,0 +1,20 @@
+% To obtain double/triple/multiple integrals and cyclic integrals you must use amsmath and esint (for cyclic integrals) packages. 
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{gather*}
+    \iint_V \mu(u,v) \,du\,dv
+    \\
+    \iiint_V \mu(u,v,w) \,du\,dv\,dw
+    \\
+    \iiiint_V \mu(t,u,v,w) \,dt\,du\,dv\,dw
+    \\
+    \idotsint_V \mu(u_1,\dots,u_k) \,du_1 \dots du_k
+    \\
+    \oint_V f(s) \,ds
+\end{gather*}
+
+\end{document}
