@@ -31,7 +31,6 @@
 *.notes
 # tikz
 *.pgf
-*.pdf
 *.pdf_tex
 # xcolor
 *.xcp
@@ -48,4 +47,4 @@ out/
 Thumbs.db
 
 ## Final PDF (Optional: uncomment if you only want to track source code)
-# *.pdf
+*.pdf
