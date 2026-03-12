@@ -15,6 +15,7 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+*.log
 
 ## Bibliography files
 *.bbl
